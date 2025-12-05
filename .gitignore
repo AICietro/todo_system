@@ -1,0 +1,57 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+*.egg
+*.egg-info/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Database
+test.db
+*.sqlite
+*.sqlite3
+
+# Build
+build/
+dist/
+*.whl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Other
+.cache/
+.pytest_cache/
+.tmp/
+.temp/
