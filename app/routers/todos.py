@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database import engine, Base
-from deps.db import get_db
-from schemas.todo import TodoCreate, TodoResponse
-import crud.todo as crud
-from core.logger import logger
-from deps.cache import get_redis
+from app.database import engine, Base
+from app.deps.db import get_db
+from app.schemas.todo import TodoCreate, TodoResponse
+import app.crud.todo as crud
+from app.core.logger import logger
+from app.deps.cache import get_redis
 from redis import Redis
 import json
 from fastapi.encoders import jsonable_encoder

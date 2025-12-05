@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
-from routers.users import router as users_router
-from routers.todos import router as todos_router
-from core.logger import logger
+from app.routers.users import router as users_router
+from app.routers.todos import router as todos_router
+from app.core.logger import logger
 
 
 app = FastAPI()

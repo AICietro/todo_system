@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from models.todo import Todo
-from schemas.todo import TodoCreate
+from app.models.todo import Todo
+from app.schemas.todo import TodoCreate
 
 
 def create_todo(db: Session, todo: TodoCreate, user_id: int):

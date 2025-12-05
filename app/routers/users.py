@@ -1,12 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database import engine, Base
-from deps.db import get_db
-from schemas.user import UserCreate, UserResponse
-import crud.user as crud
-from deps.cache import get_local_cache
+from app.database import engine, Base
+from app.deps.db import get_db
+from app.schemas.user import UserCreate, UserResponse
+import app.crud.user as crud
+from app.deps.cache import get_local_cache
 from cachetools import TTLCache
-from core.logger import logger
+from app.core.logger import logger
 
 router = APIRouter(prefix="/users")
 Base.metadata.create_all(bind=engine)
